@@ -1,5 +1,5 @@
 # Pflichtenheft für motorisierten Kamera-Slider
-_Tea Leon & Ehmeir Franziskus_
+# _Tea Leon & Ehmeir Franziskus_
 
 <br>
 <br>
