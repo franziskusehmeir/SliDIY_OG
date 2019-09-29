@@ -40,8 +40,6 @@ Mehr filmbegeisterten Menschen soll die Möglichkeit zum Besitz eines günstigen
 
 ## User Storys nach Scrum
 
-Als Content-Creator möchte ich reibungslose, horizontale wie auch vertikale Kamerabewegungen anwenden.
-
-Als Naturfotograf möchte ich bewegte Zeitraffer erstellen.
-
-Als Lehrer möchte ich meinen Schülern die Möglichkeit bieten mit professionellem Equipment zu arbeiten.
+- Als Content-Creator möchte ich reibungslose, horizontale wie auch vertikale Kamerabewegungen anwenden.
+- Als Naturfotograf möchte ich bewegte Zeitraffer erstellen.
+- Als Lehrer möchte ich meinen Schülern die Möglichkeit bieten mit professionellem Equipment zu arbeiten.
