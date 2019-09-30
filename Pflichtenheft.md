@@ -12,7 +12,7 @@ Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Einer der vier
 
 ## Ist-Situation
 
-In Videoproduktionen werden seit vielen Jahren Slider verwendet um stabile horizontale und vertikale Aufnahmen zu machen. Diese können motorisiert sein oder nicht.
+In Videoproduktionen werden seit vielen Jahren Slider verwendet, um stabile horizontale und vertikale Aufnahmen zu machen. Diese können motorisiert sein oder nicht.
 
 <br>
 
