@@ -1,17 +1,17 @@
-# System Specification for a Motorised Camera-Slider
+# System specification for a motorised camera-slider
 _Ehmeir Franziskus & Tea Leon_
 
 <br>
 <br>
 
-## Initial Situation
+## Initial situation
 
 The higher technical education institute Leonding is a medium-sized school in the central region of Upper Austria. One of the four departments is IT media technology. There, media production is a clear focus of the education.
 
 
 <br>
 
-## Status Quo
+## Status quo
 
 In video productions, sliders have been used  to make stable horizontal and vertical shots for many years. These can be motorized or not.
 
@@ -21,13 +21,13 @@ In video productions, sliders have been used  to make stable horizontal and vert
 
 <br>
 
-## Problem Definition
+## Problem definition
 
 Motorized sliders are very expensive and usually unaffordable for the average user. Cheap alternatives are not motorised and this again creates a risk of  shaky footage or irregular camera movement speeds.
 
 <br>
 
-## Task Formulation
+## Task formulation
 
 Creation of an affordable slider system that can be controlled via a microcontroller with an app
 
@@ -39,7 +39,7 @@ More film-loving people should be given the opportunity to own a cheap, motorize
 
 <br>
 
-## User Stories
+## User stories
 
 - As a content creator, I want to create smooth, horizontal and vertical camera movements.
 - As a nature photographer, I want to create a moving time lapse.
