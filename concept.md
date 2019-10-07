@@ -37,7 +37,7 @@ Wiring, 3D printing, fragility
 ## Implementations
 
 ### First technical realization
-ESP32 + Stepper Motor + C ++ Code
+ESP32 + Stepper Motor + C++ Code
 
 ### Second technical realization
 ESP8266 + stepper motor + necessary hardware for connection (stepper motor driver h-bridge)
