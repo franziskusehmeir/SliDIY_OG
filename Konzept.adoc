@@ -1,0 +1,62 @@
+== Konzept für motorisierten Slider
+
+=== Einleitung / Rahmenbedingung
+
+Ein Slider ist ein „Schienensystem“ das scheinbar schwebende
+Kamerafahrten ermöglicht. Motorisierte Ausführungen sind sehr teuer und
+bei unmotorisierten Systemen entsteht wieder eine Verwackslungsgefahr.
+
+=== Ausgangslage / Ist-Situation / Analyse
+
+==== Ausgangssituation
+
+Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Einer
+der vier Ausbildungsrichtungen ist IT-Medientechnik. Dort bildet die
+Medienproduktion einen klaren Schwerpunkt der Ausbildung.
+
+==== Ist-Situation
+
+In Videoproduktionen werden seit vielen Jahren Slider verwendet, um
+stabile horizontale und vertikale Aufnahmen zu machen. Diese können
+motorisiert sein oder nicht.
+
+=== Zielsystem / Sollvorschläge
+
+==== Ziele
+
+Es ist ein erschwingliches Slider-System zu entwickeln, dass über einen
+Micro-Controller mit einer App gesteuert werden kann.
+
+==== Zielgruppen
+
+Filminteressierte Personen mit sehr kleinem Budget.
+
+==== Zielkonflikte
+
+Leicht anwendbares, portables System Verkabelungen, 3D Druck,
+Zerbrechlichkeit
+
+=== Realisierungen
+
+==== Realisierung 1
+
+ESP8266 + Stepper Motor + Nötige Hardware zur Verbindung (stepper motor
+driver h-bridge) Blynk-App
+
+==== Realisierung 2
+
+ESP32 + Stepper Motor + C++ Code
+
+=== Qellen
+
+==== Lync App
+
+https://youtu.be/dKzCZhnLUyc
+
+==== Joystick change speed
+
+https://youtu.be/dQuTgngoFPQ
+
+==== Joystick Tuto
+
+https://youtu.be/gudmACeUyVc
