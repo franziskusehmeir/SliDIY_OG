@@ -1,5 +1,5 @@
 == Konzept für motorisierten Slider
-
+.
 === Einleitung / Rahmenbedingung
 
 Ein Slider ist ein „Schienensystem“ das scheinbar schwebende
