@@ -29,7 +29,7 @@ Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale a
 Mehr filmbegeisterten Menschen soll die Möglichkeit zum Besitz eines
 günstigen, motorisierten Slider-Systems geschaffen werden.
 
-Es soll eine App zur praltischeren und bequemeren Verwendung des Systems entwickelt werden.
+Es soll eine App zur praktischeren und bequemeren Verwendung des Systems entwickelt werden.
 
 === User Storys nach Scrum
 
