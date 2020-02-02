@@ -12,3 +12,7 @@ https://github.com/franziskusehmeir[FranziskusEhmeir]
 See also the list of
 https://github.com/franziskusehmeir/SliDIY/contributors[contributors]
 who participated in this project.
+
+== Use Case Diagram
+
+image:./images/ucd.png[usecasediagram]
