@@ -6,7 +6,7 @@ _Tea Leon & Ehmeir Franziskus_
 
 Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Einer
 der vier Ausbildungsrichtungen ist IT-Medientechnik. Dort bildet die
-Medienproduktion einen klaren Schwerpunkt der Ausbildung.
+Medienproduktion einen der Schwerpunkte der Ausbildung.
 
 === Ist-Situation
 
@@ -18,20 +18,18 @@ image:./images/slides.png[Movements,title="Slides"]
 
 === Problem
 
-Motorisierte Slider sind sehr teuer und meist unerschwinglich für den
-durchschnittlichen Anwender. Billige Alternativen sind unmotorisiert und
-dadurch entsteht wieder eine Verwackslungsgefahr bzw. unregelmäßige
-Bewegungsgeschwindigkeiten.
+Wenn man versucht per Hand bewegte Aufnahemen zu machen, endet man meist mit verwackeltem oder sogar unbrauchbarem Videomaterial. Weiters werden die meisten Zeitrafferaufnahmen langweilig, da sie keine Bewegung beinhalten. Die Lösung dieser Probleme wären motorisierte Slidersysteme. Motorisierte Slider sind sehr teuer und meist unerschwinglich für den durchschnittlichen Anwender. Billige Alternativen sind unmotorisiert und dadurch entsteht wieder eine Verwackslungsgefahr bzw. unregelmäßige Bewegungsgeschwindigkeiten.
 
 === Aufgabenstellung
 
-Es ist ein erschwingliches Slider-System zu entwickeln, dass über einen
-Micro-Controller mit einer App gesteuert werden kann.
+Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen kann. Die montierte Kamera soll einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Slider soll über einen Micro-Controller mit einer App gesteuert werden können.
 
 === Ziele
 
 Mehr filmbegeisterten Menschen soll die Möglichkeit zum Besitz eines
 günstigen, motorisierten Slider-Systems geschaffen werden.
+
+Das klare Ziel dieser Anwendung ist es Kinder sowie Haustiere vor Badeunfällen zu bewahren. Wie schon erwähnt soll das System möglichst nachhaltig betrieben werden. Es soll eine App zur noch schnelleren Benachrichtigung und angenehmerer Benutzung des Systems entwickelt werden.
 
 === User Storys nach Scrum
 
