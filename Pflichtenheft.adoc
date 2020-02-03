@@ -22,14 +22,14 @@ Wenn man versucht per Hand bewegte Aufnahmen zu machen, endet man meist mit verw
 
 === Aufgabenstellung
 
-Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen kann. Die montierte Kamera soll einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders soll über einen Micro-Controller angesprochen werden. Später soll das System mit einer App gesteuert werden können.
+Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen kann. Die montierte Kamera wird einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders wird über einen Micro-Controller angesprochen werden. Später wird das System mit einer App gesteuert werden können.
 
 === Ziele
 
 Mehr filmbegeisterten Menschen soll die Möglichkeit zum Besitz eines
 günstigen, motorisierten Slider-Systems geschaffen werden.
 
-Es soll eine App zur praktischeren und bequemeren Verwendung des Systems entwickelt werden.
+Es wird eine App zur praktischeren und bequemeren Verwendung des Systems entwickelt werden.
 
 === User Storys nach Scrum
 
