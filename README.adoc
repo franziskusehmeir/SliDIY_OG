@@ -19,4 +19,4 @@ image:./images/ucd.png[usecasediagram]
 
 === System Architecture
 
-image:./images/systemarchitecture.jpg [System Architecture]
+image:./images/systemarchitecture.jpg[systemarchitecture]
