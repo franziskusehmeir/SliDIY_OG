@@ -20,3 +20,7 @@ image:./images/ucd.png[usecasediagram]
 === System Architecture
 
 image:./images/systemarchitecture.jpg[systemarchitecture]
+
+=== Youtrack-Diagram
+
+image:./images/psp.PNG[psp]
