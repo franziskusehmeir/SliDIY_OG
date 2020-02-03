@@ -10,9 +10,7 @@ bei unmotorisierten Systemen entsteht wieder eine Verwackslungsgefahr.
 
 ==== Ausgangssituation
 
-Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Einer
-der vier Ausbildungsrichtungen ist IT-Medientechnik. Dort bildet die
-Medienproduktion einen klaren Schwerpunkt der Ausbildung.
+Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Einer der vier Ausbildungsrichtungen ist IT-Medientechnik. Dort bildet die Medienproduktion einen der Schwerpunkte der Ausbildung.
 
 ==== Ist-Situation
 
@@ -24,8 +22,8 @@ motorisiert sein oder nicht.
 
 ==== Ziele
 
-Es ist ein erschwingliches Slider-System zu entwickeln, dass über einen
-Micro-Controller mit einer App gesteuert werden kann.
+Mehr filmbegeisterten Menschen soll die Möglichkeit zum Besitz eines günstigen, motorisierten Slider-Systems geschaffen werden.
+Es soll eine App zur praktischeren und bequemeren Verwendung des Systems entwickelt werden.
 
 ==== Zielgruppen
 
