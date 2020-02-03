@@ -1,5 +1,7 @@
 == Konzept für motorisierten Slider
 
+_Tea Leon & Ehmeir Franziskus_
+
 === Einleitung / Rahmenbedingung
 
 Ein Slider ist ein „Schienensystem“ das scheinbar schwebende
