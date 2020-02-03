@@ -21,6 +21,6 @@ image:./images/ucd.png[usecasediagram]
 
 image:./images/systemarchitecture.jpg[systemarchitecture]
 
-=== Youtrack-Diagram
+=== Youtrack Diagram
 
 image:./images/psp.PNG[psp]
