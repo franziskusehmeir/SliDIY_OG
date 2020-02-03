@@ -3,7 +3,7 @@
 An affordable slider system that can be controlled with a mobile
 application via a microcontroller.
 
-=== Authors
+==== Authors
 
 * *Tea Leon* - https://github.com/tealeon[TeaLeon]
 * *Ehmeir Franziskus* -
@@ -13,6 +13,6 @@ See also the list of
 https://github.com/franziskusehmeir/SliDIY/contributors[contributors]
 who participated in this project.
 
-== Use Case Diagram
+=== Use Case Diagram
 
 image:./images/ucd.png[usecasediagram]
