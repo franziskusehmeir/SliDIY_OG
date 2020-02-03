@@ -16,3 +16,7 @@ who participated in this project.
 === Use Case Diagram
 
 image:./images/ucd.png[usecasediagram]
+
+=== System Architecture
+
+image:./images/systemarchitecture.jpg [System Architecture]
