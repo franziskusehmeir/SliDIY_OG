@@ -19,12 +19,12 @@ Bewegungsgeschwindigkeiten.
 === Aufgabenstellung
 
 Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen 
-kann. Die montierte Kamera soll einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. 
-Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders soll über einen Micro-Controller 
-angesprochen werden. Später soll das System mit einer App gesteuert werden können.
+kann. Die montierte Kamera wird einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. 
+Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders wird über einen Micro-Controller 
+angesprochen werden. Später wird das System mit einer App gesteuert werden können.
 
 === Anwendungsfälle
 
-Das System soll ruhige Kamerabewegungen und bewegte Zeitrafferaufnahmen ermöglichen. Es eignet sich für Personen die für geringes
+Das System ermöglicht ruhige Kamerabewegungen und bewegte Zeitrafferaufnahmen. Es eignet sich für Personen die für geringes
 Geld diese Kamerabewegungen verwenden möchten. Weiters eignet es sich ach für Lehrkräfte, die ihren Schülern einen Einblick in
 profesionelles Equipment geben möchten.
