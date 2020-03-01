@@ -4,9 +4,7 @@ _Tea Leon & Ehmeir Franziskus_
 
 === Ausgangssituation
 
-Die HTL Leonding ist eine mittelgroße Schule im Zentralraum OÖ. Einer
-der vier Ausbildungsrichtungen ist IT-Medientechnik. Dort bildet die
-Medienproduktion einen der Schwerpunkte der Ausbildung.
+Videos werden auf verschiedenen Geräten aufgenommen, von Handys bis zu professionellen Filmkameras.
 
 === Ist-Situation
 
@@ -22,7 +20,7 @@ Wenn man versucht per Hand bewegte Aufnahmen zu machen, endet man meist mit verw
 
 === Aufgabenstellung
 
-Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen kann. Die montierte Kamera wird einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders wird über einen Micro-Controller angesprochen werden. Später wird das System mit einer App gesteuert werden können.
+Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen kann. Die montierte Kamera wird einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders wird über einen Micro-Controller angesprochen werden. Später wird das System mit einer App gesteuert werden können. Außerdem ist eine Anleitung zu erstellen, damit Leute das Slider-System nachbauen können.
 
 === Ziele
 
@@ -37,6 +35,3 @@ Als Content-Creator möchte ich reibungslose, horizontale wie auch
 vertikale Kamerabewegungen anwenden.
 
 Als Naturfotograf möchte ich bewegte Zeitraffer erstellen.
-
-Als Lehrer möchte ich meinen Schülern die Möglichkeit bieten mit
-professionellem Equipment zu arbeiten.
