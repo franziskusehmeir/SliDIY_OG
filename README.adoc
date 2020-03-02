@@ -23,4 +23,4 @@ image:./images/systemarchitecture.jpg[systemarchitecture]
 
 === Youtrack Diagram
 
-image:./images/psp.PNG[psp]
+image:./images/psp_new.PNG[psp]
