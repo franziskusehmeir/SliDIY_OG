@@ -24,10 +24,7 @@ Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale a
 
 === Ziele
 
-Mehr filmbegeisterten Menschen soll die Möglichkeit zum Besitz eines
-günstigen, motorisierten Slider-Systems geschaffen werden.
-
-Es wird eine App zur praktischeren und bequemeren Verwendung des Systems entwickelt werden.
+Filmbegeisterten Menschen soll es ermöglicht werden, mithilfe der Dokumentation selbst einen Kamera-Slider nachzubauen und in Betrieb zu nehmen.
 
 === User Storys nach Scrum
 
