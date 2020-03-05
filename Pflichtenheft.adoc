@@ -4,9 +4,12 @@ _Tea Leon & Ehmeir Franziskus_
 
 === Ausgangssituation
 
-Videos werden auf verschiedenen Geräten aufgenommen, von Handys bis zu professionellen Filmkameras.
+Videos werden auf verschiedenen Geräten aufgenommen, mit Handys bis zu professionellen Filmkameras.
 
 === Ist-Situation
+
+In semi-professionellen Filmproduktionen ist es oft wichtig, eine 
+ruhige Kamerafahrt zu erstellen.
 
 In Videoproduktionen werden seit vielen Jahren Slider verwendet um
 stabile horizontale und vertikale Aufnahmen zu machen. Diese können
@@ -24,7 +27,7 @@ Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale a
 
 === Ziele
 
-Filmbegeisterten Menschen soll es ermöglicht werden, mithilfe der Dokumentation selbst einen Kamera-Slider nachzubauen und in Betrieb zu nehmen.
+Filmbegeisterten Menschen soll es ermöglicht werden, mithilfe der Dokumentation selbst einen Kamera-Slider nachzubauen und ihn in Betrieb zu nehmen. Somit können sie qualitativ hochwertige Aufnahmen erstellen, die frei von Verwacklungen und Geschwindigkeitsnderungen sind.
 
 === User Storys nach Scrum
 
