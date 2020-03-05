@@ -2,11 +2,8 @@
 left to right direction
 skinparam packageStyle rectangle
 actor Creator
-actor Fotograf
 rectangle SliDIY {
-  Creator -- (ruhige Kamerafahrt)
-  Creator -- (App-Bedienung)
-  Fotograf -- (App-Bedienung)
-  Fotograf -- (Zeitraffer)
+  Creator -- (kontinuierliche Kamerafahrt)
+  Creator -- (benutzerdefinierte Kamerafahrt)
 }
 @enduml
