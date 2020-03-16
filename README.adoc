@@ -19,7 +19,7 @@ image:./images/UCD_V3.png[usecasediagram]
 
 === System Architecture
 
-image:./images/systemarchitecture.jpg[systemarchitecture]
+image:./images/SysArc.png[systemarchitecture]
 
 === Youtrack Diagram
 
