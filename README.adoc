@@ -26,5 +26,5 @@ image:./images/systemarchitecture.jpg[systemarchitecture]
 image:./images/psp_new.PNG[psp]
 
 
-=== Gantt-Chart
+=== Gantt-Chart mit Use Cases
 image:./images/gantt.png[gantt]
