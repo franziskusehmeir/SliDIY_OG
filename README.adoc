@@ -17,7 +17,7 @@ who participated in this project.
 
 image:./images/UCD_V3.png[usecasediagram]
 
-=== System Architecture
+=== System Architecture (Hardware)
 
 image:./images/SysArc.png[systemarchitecture]
 
