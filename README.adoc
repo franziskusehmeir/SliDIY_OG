@@ -27,4 +27,4 @@ image:./images/psp_new.PNG[psp]
 
 
 === Gantt-Chart
-image:./images/gantt.jpg[gantt]
+image:./images/gantt.png[gantt]
