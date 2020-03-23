@@ -39,19 +39,19 @@ Als Naturfotograf möchte ich bewegte Zeitraffer erstellen.
 
 === System Architecture (Hardware)
 
-image:./images/SysArc.png[systemarchitecture]
+image:../images/SysArc.png[systemarchitecture]
 
 === Deployment Diagram
 
-image:./images/deployment_diagram.PNG[deployment_diagram]
+image:../images/deployment_diagram.PNG[deployment_diagram]
 
 === Gantt
-image:./images/gantt.png[gantt]
+image:../images/gantt.png[gantt]
 
 === Use Case Diagram
 
-image:./images/UCD_V3.png[usecasediagram]
+image:../images/UCD_V3.png[usecasediagram]
 
 === Youtrack Diagram
 
-image:./images/psp3.png[psp]
+image:../images/psp3.png[psp]
