@@ -21,6 +21,8 @@ image:./images/UCD_V3.png[usecasediagram]
 
 image:./images/SysArc.png[systemarchitecture]
 
+=== Deployment Diagram
+
 image:./images/deployment_diagram.PNG[deployment_diagram]
 
 === Youtrack Diagram
