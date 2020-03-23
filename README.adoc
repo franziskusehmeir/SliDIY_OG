@@ -30,5 +30,5 @@ image:./images/deployment_diagram.PNG[deployment_diagram]
 image:./images/psp3.png[psp]
 
 
-=== Gantt-Chart mit Use Cases
+=== Gantt
 image:./images/gantt.png[gantt]
