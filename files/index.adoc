@@ -13,7 +13,7 @@ In Videoproduktionen werden seit vielen Jahren Slider verwendet um
 stabile horizontale und vertikale Aufnahmen zu machen. Diese können
 motorisiert sein oder nicht.
 
-image:./images/slides.png[Movements,title="Slides"]
+image:../images/slides.png[Movements,title="Slides"]
 
 === Problemstellung
 
