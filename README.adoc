@@ -13,6 +13,9 @@ See also the list of
 https://github.com/franziskusehmeir/SliDIY/contributors[contributors]
 who participated in this project.
 
+=== GH Page
+https://franziskusehmeir.github.io/SliDIY/
+
 === Use Case Diagram
 
 image:./images/UCD_V3.png[usecasediagram]
