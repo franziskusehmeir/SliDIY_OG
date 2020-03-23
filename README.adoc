@@ -25,7 +25,7 @@ image:./images/deployment_diagram.PNG[deployment_diagram]
 
 === Youtrack Diagram
 
-image:./images/psp_new.PNG[psp]
+image:./images/psp3.png[psp]
 
 
 === Gantt-Chart mit Use Cases
