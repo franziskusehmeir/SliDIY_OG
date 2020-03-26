@@ -23,6 +23,16 @@ Wenn man versucht per Hand bewegte Aufnahmen zu machen, endet man meist mit verw
 
 Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale als auch schräge Kamerabewegungen durchführen kann. Die montierte Kamera wird einen vorgegeben Streckenabschnitt in einer ebenso vorgegebenen Zeit zurücklegen. Somit können z.B. auch Zeitrafferaufnahmen erstellt werden. Der Motor des Sliders wird über einen Micro-Controller angesprochen werden. Später wird das System mit einer App gesteuert werden können. Außerdem ist eine Anleitung zu erstellen, damit Leute das Slider-System nachbauen können.
 
+==== Funktionale Anforderungen
+
+image:../images/UCD_V3.png[usecasediagram]
+
+==== Nichtfunktionale Anforderungen
+
+Die Oberfläche gewährleistet eine gute Übersicht und eine leichte Bedienung. +
+Die Komponenten des Systems sind erschwinglich. +
+Es wird eine simple Anleitung zum Nachbau zur Verfügung gestellt.
+
 === Ziele
 
 Filmbegeisterten Menschen soll es ermöglicht werden, mithilfe der Dokumentation selbst einen Kamera-Slider nachzubauen und ihn in Betrieb zu nehmen. Somit können sie qualitativ hochwertige Aufnahmen erstellen, die frei von Verwacklungen und Geschwindigkeitsnderungen sind.
