@@ -53,7 +53,7 @@ image:../images/SysArc.png[systemarchitecture]
 
 === Deployment Diagram
 
-image:../images/deployment_diagram.PNG[deployment_diagram]
+image:./images/deploymentd.png[deployment_diagram]
 
 === Use Case Diagram
 
