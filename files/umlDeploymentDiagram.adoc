@@ -1,0 +1,24 @@
+@startuml
+
+node display{
+}
+
+node raspberryPi{
+ artifact angularApp
+ artifact serial.server
+}
+
+node arduino{
+ artifact cnclib
+ component CNCShield
+}
+
+node steppermotor{
+
+}
+
+display == raspberryPi
+raspberryPi == arduino : USB
+arduino == steppermotor
+
+@enduml
