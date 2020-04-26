@@ -33,5 +33,5 @@ image:./images/deploymentd.png[deployment_diagram]
 image:./images/psp3.png[psp]
 
 
-=== Gantt
+=== Gantt Diagram
 image:./images/gantt.png[gantt]

@@ -1,0 +1,6 @@
+build-docs-html/
+build-docs-pdf/
+build-docs-revealjs/
+target/
+asciidocs/revealjs/
+revealjs.zip
