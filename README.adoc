@@ -21,7 +21,10 @@ https://franziskusehmeir.github.io/SliDIY/
 https://vm81.htl-leonding.ac.at/agiles/99-166/100-903
 
 == How to run
-`git clone https://github.com/franziskusehmeir/SliDIY.git` .
-`cd web/slidiy` .
-`npm install` .
+`git clone https://github.com/franziskusehmeir/SliDIY.git`
+
+`cd web/slidiy`
+
+`npm install`
+
 `ng serve --open`
