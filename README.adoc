@@ -14,24 +14,9 @@ https://github.com/franziskusehmeir/SliDIY/contributors[contributors]
 who participated in this project.
 
 === GH Page
+
 https://franziskusehmeir.github.io/SliDIY/
 
-=== Use Case Diagram
+=== Youtrack
 
-image:./images/UCD_V3.png[usecasediagram]
-
-=== System Architecture (Hardware)
-
-image:./images/SysArc.png[systemarchitecture]
-
-=== Deployment Diagram
-
-image:./images/deploymentd.png[deployment_diagram]
-
-=== Youtrack Diagram
-
-image:./images/psp3.png[psp]
-
-
-=== Gantt Diagram
-image:./images/gantt.png[gantt]
+https://vm81.htl-leonding.ac.at/agiles/99-166/100-903
