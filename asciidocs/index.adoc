@@ -15,7 +15,7 @@ In Videoproduktionen werden seit vielen Jahren Slider verwendet um
 stabile horizontale und vertikale Aufnahmen zu machen. Diese können
 motorisiert sein oder nicht.
 
-image:.images/slides.png[Movements,title="Slides"]
+image::.images/slides.png[Movements,title="Slides"]
 
 === Problemstellung
 
@@ -27,7 +27,7 @@ Es ist ein erschwingliches Slider-System zu entwickeln, das sowohl horizontale a
 
 ==== Funktionale Anforderungen
 
-image:images/UCD_V3.png[usecasediagram]
+image::images/UCD_V3.png[usecasediagram]
 
 ==== Nichtfunktionale Anforderungen
 
@@ -51,25 +51,25 @@ Als Naturfotograf möchte ich bewegte Zeitraffer erstellen.
 
 === System Architecture (Hardware)
 
-image:images/SysArc.png[systemarchitecture]
+image::images/SysArc.png[systemarchitecture]
 
 === Deployment Diagram
 
-image:images/deploymentd.png[deployment_diagram]
+image::images/deploymentd.png[deployment_diagram]
 
 === Use Case Diagram
 
-image:images/UCD_V3.png[usecasediagram]
+image::images/UCD_V3.png[usecasediagram]
 
 === Youtrack Diagram Epic
 
-image:images/psp3.png[pspepic]
+image::images/psp3.png[pspepic]
 
 === Youtrack Diagram Sprints
-image:images/psp4.png[pspsprints]
+image::images/psp4.png[pspsprints]
 
 
 == Projekthandbuch "Organisatorische Rahmenbedigungen"
 
 === Gantt Diagram
-image:images/gantt.png[gantt]
+image::images/gantt.png[gantt]
