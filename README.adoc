@@ -27,7 +27,7 @@ clone repo:
 change directory:
 `cd web/slidiy`
 
-install node-modules
+install node-modules:
 `npm install`
 
 build app:
