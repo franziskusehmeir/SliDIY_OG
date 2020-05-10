@@ -63,10 +63,10 @@ image::UCD_V3.png[usecasediagram]
 
 === Youtrack Diagram Epic
 
-image::psp3.png[pspepic]
+image::psp_epic.png[pspepic]
 
 === Youtrack Diagram Sprints
-image::psp4.png[pspsprints]
+image::psp_sprint.png[pspsprints]
 
 
 == Projekthandbuch "Organisatorische Rahmenbedigungen"
