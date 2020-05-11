@@ -1,0 +1,102 @@
+== Anleitung für motorisierten Slider
+
+== Ziel
+
+Das Bauen eines motorisierten Sliders.
+
+image:./images/SysArc.png[Aufbau,title="Aufbau"]
+
+=== Hardwareliste 
+
+Slider:
+https://www.amazon.de/gp/product/B06Y46H989/
+
+Schrittmotor:
+https://www.amazon.de/gp/product/B00PNEQKC0/
+
+Arduino Uno mit CNC-Schild V3.0:
+(mit USB-Kabel und Treiber)
+
+https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4
+
+Zahnriemen mit Zubehör:
+https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+
+=== Software Installation
+
+Auf +
+https://www.raspberrypi.org/downloads/raspbian/ +
+das Raspbian Buster Lite Image gerunterladen
+
+Das Image auf die SD-Karte schreiben mit dem Raspberry Pi Imager:
+https://www.raspberrypi.org/downloads/
+
+Zunächst den Anweisungen am Raspberry Pi folgen
+
+Dann im raspi-config SSH freischalten
+
+``raspi-config``
+In diesem Menü wechseln Sie auf den Reiter “Schnittstellen” und stellen den Punkt “SSH” auf “Aktiviert” um. Nach einem Klick auf “Ok” müssen Sie den Raspberry Pi einmalig neu starten, um den SSH-Zugriff einzuschalten.
+
+CNCJS auf dem Raspberry installieren:
+``
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
+sudo apt-get install -y build-essential git
+sudo apt-get install -y htop iotop nmon lsof screen
+sudo reboot
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs build-essential
+sudo apt-get install -y npm
+sudo npm install -g npm@latest
+sudo npm install -g cncjs@latest --unsafe-perm
+cncjs //check localhost:8000
+``
+
+Automatischen Starten von CNCJS nach dem booten:
+
+``
+(crontab -l | grep -v cncjs; echo "@reboot $(which cncjs) >>$HOME/cncjs.log 2>&1") | crontab - //for automatic boot
+``
+
+``
+cd /home/pi
+
+cat >startCNCjsUI <<EOF
+#!/bin/bash
+
+# Prevent the screen from turning off
+xset s off
+xset -dpms
+
+# Show the user why it is taking so long
+zenity --info --no-wrap --timeout 240 --width=400 --height=400 --text="Waiting for CNCjs server to start" &
+
+# Wait until the CNCjs server becomes responsive before starting the browser
+until $(curl --output /dev/null --silent --head --fail http://localhost:8000/); do
+  sleep 1
+done
+
+# Finally, start the browser, pointing to the CNCjs server
+# --kiosk makes the browser occupy the entire screen.
+# If you want to kill the full-screen browser, use ALT-F4
+# If you omit --kiosk, the browser will start in a normal window
+chromium-browser --kiosk http://localhost:8000/
+EOF
+
+chmod a+x startCNCjsUI
+
+mkdir -p .config/lxsession/LXDE-pi
+
+cat >.config/lxsession/LXDE-pi/autostart <<EOF
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+/home/pi/startCNCjsUI
+EOF
+``
+
+Raspberry Pi neu starten
+``
+sudo reboot
+``
