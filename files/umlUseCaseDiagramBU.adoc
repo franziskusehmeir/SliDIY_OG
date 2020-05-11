@@ -1,0 +1,23 @@
+@startuml
+
+skinparam ArrowColor black
+skinparam handwritten true
+skinparam borderColor black
+skinparam backgroundColor transparent
+skinparam ArrowColor black
+skinparam ActorBorderColor black
+skinparam ActorBackgroundColor transparent
+
+skinparam usecase {
+	BackgroundColor transparent
+	BorderColor black
+}
+
+left to right direction
+skinparam packageStyle rectangle
+actor Creator
+rectangle SliDIY {
+  Creator -- (kontinuierliche Kamerafahrt)
+  Creator -- (benutzerdefinierte Kamerafahrt)
+}
+@enduml
