@@ -42,24 +42,60 @@ In diesem Menü wechseln Sie auf den Reiter “Schnittstellen” und stellen den
 CNCJS auf dem Raspberry installieren: +
 
 ``
-sudo apt-get update +
-sudo apt-get upgrade -y +
-sudo apt-get dist-upgrade -y
-sudo apt-get install -y build-essential git
-sudo apt-get install -y htop iotop nmon lsof screen
-sudo reboot
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt install -y nodejs build-essential
-sudo apt-get install -y npm
-sudo npm install -g npm@latest
-sudo npm install -g cncjs@latest --unsafe-perm
-cncjs //check localhost:8000
+sudo apt-get update
 ``
+
+``
+sudo apt-get upgrade -y
+``
+
+``
+sudo apt-get dist-upgrade -y
+``
+
+``
+sudo apt-get install -y build-essential git
+``
+
+``
+sudo apt-get install -y htop iotop nmon lsof screen
+``
+
+``
+sudo reboot
+``
+
+``
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+``
+
+``
+sudo apt install -y nodejs build-essential
+``
+
+``
+sudo apt-get install -y npm
+``
+
+``
+sudo npm install -g npm@latest
+``
+
+``
+sudo npm install -g cncjs@latest --unsafe-perm
+``
+
+``
+cncjs //check 
+``
+
+Nun kann man unter localhost:8000 checken ob die Installation funktioniert hat.
+
 
 Automatischen Starten von CNCJS nach dem booten:
 
 ``
-(crontab -l | grep -v cncjs; echo "@reboot $(which cncjs) >>$HOME/cncjs.log 2>&1") | crontab - //for automatic boot
+(crontab -l | grep -v cncjs; echo "@reboot $(which cncjs) >>$HOME/cncjs.log 2>&1") | crontab -
 ``
 
 ``
@@ -98,7 +134,7 @@ cat >.config/lxsession/LXDE-pi/autostart <<EOF
 EOF
 ``
 
-Raspberry Pi neu starten
+Raspberry Pi neu starten +
 ``
 sudo reboot
 ``
