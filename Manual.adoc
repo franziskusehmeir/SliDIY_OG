@@ -8,18 +8,19 @@ image:./images/SysArc.png[Aufbau,title="Aufbau"]
 
 === Hardwareliste 
 
-Slider:
+Slider: +
 https://www.amazon.de/gp/product/B06Y46H989/
 
-Schrittmotor:
+Schrittmotor: +
 https://www.amazon.de/gp/product/B00PNEQKC0/
 
-Arduino Uno mit CNC-Schild V3.0:
-(mit USB-Kabel und Treiber)
+Arduino Uno mit CNC-Schild V3.0 (mit USB-Kabel und Treiber) +
 
-https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4
+Touchscreen Display (optinal): +
+https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4 +
+_Falls man mit der Desktop-Version von CNCJS arbeiten möchte, kann man diesen Schritt auslassen._ +
 
-Zahnriemen mit Zubehör:
+Zahnriemen mit Zubehör: +
 https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
 
 === Software Installation
@@ -28,20 +29,21 @@ Auf +
 https://www.raspberrypi.org/downloads/raspbian/ +
 das Raspbian Buster Lite Image gerunterladen
 
-Das Image auf die SD-Karte schreiben mit dem Raspberry Pi Imager:
+Das Image auf die SD-Karte schreiben mit dem Raspberry Pi Imager: +
 https://www.raspberrypi.org/downloads/
 
 Zunächst den Anweisungen am Raspberry Pi folgen
 
 Dann im raspi-config SSH freischalten
 
-``raspi-config``
+``raspi-config`` +
 In diesem Menü wechseln Sie auf den Reiter “Schnittstellen” und stellen den Punkt “SSH” auf “Aktiviert” um. Nach einem Klick auf “Ok” müssen Sie den Raspberry Pi einmalig neu starten, um den SSH-Zugriff einzuschalten.
 
-CNCJS auf dem Raspberry installieren:
+CNCJS auf dem Raspberry installieren: +
+
 ``
-sudo apt-get update
-sudo apt-get upgrade -y
+sudo apt-get update +
+sudo apt-get upgrade -y +
 sudo apt-get dist-upgrade -y
 sudo apt-get install -y build-essential git
 sudo apt-get install -y htop iotop nmon lsof screen
