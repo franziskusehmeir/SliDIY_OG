@@ -86,7 +86,7 @@ sudo npm install -g cncjs@latest --unsafe-perm
 ``
 
 ``
-cncjs //check 
+cncjs
 ``
 
 Nun kann man unter localhost:8000 checken ob die Installation funktioniert hat.
@@ -98,7 +98,7 @@ Automatischen Starten von CNCJS nach dem booten:
 (crontab -l | grep -v cncjs; echo "@reboot $(which cncjs) >>$HOME/cncjs.log 2>&1") | crontab -
 ``
 
-``
+....
 cd /home/pi
 
 cat >startCNCjsUI <<EOF
@@ -132,7 +132,7 @@ cat >.config/lxsession/LXDE-pi/autostart <<EOF
 @pcmanfm --desktop --profile LXDE-pi
 /home/pi/startCNCjsUI
 EOF
-``
+.... +
 
 Raspberry Pi neu starten +
 ``
