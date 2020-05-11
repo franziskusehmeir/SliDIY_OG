@@ -132,7 +132,7 @@ cat >.config/lxsession/LXDE-pi/autostart <<EOF
 @pcmanfm --desktop --profile LXDE-pi
 /home/pi/startCNCjsUI
 EOF
-.... +
+....
 
 Raspberry Pi neu starten +
 ``
