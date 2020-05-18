@@ -13,12 +13,12 @@ skinparam componentBackgroundColor transparent
 skinparam componentBorderColor black
 
 node raspberryPi{
-component display
- artifact cncjsWebInterface
- artifact cncjsServer
+ component display
+ artifact nodejsApp
 }
 
 node arduino{
+ artifact grbl
  component CNCShield
 }
 
@@ -26,8 +26,7 @@ node steppermotor{
 
 }
 
-cncjsWebInterface == cncjsServer
-raspberryPi == arduino : <<serial>>
+nodejsApp == grbl : <<serial>>
 CNCShield == steppermotor : <<i2c>>
 
 @enduml
