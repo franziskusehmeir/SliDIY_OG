@@ -1,0 +1,37 @@
+@startuml
+
+skinparam ArrowColor black
+skinparam handwritten true
+skinparam borderColor black
+skinparam backgroundColor transparent
+skinparam nodeShadowing false
+skinparam nodeBackgroundColor transparent
+skinparam artifactShadowing false
+skinparam artifactBackgroundColor transparent
+skinparam componentShadowing false
+skinparam componentBackgroundColor transparent
+skinparam componentBorderColor black
+
+
+@startuml
+
+node raspberryPi{
+component display
+ artifact cncjsWebInterface
+ artifact cncjsServer
+}
+
+node arduino{
+ component CNCShield
+}
+
+node steppermotor{
+
+}
+
+cncjsWebInterface == cncjsServer
+raspberryPi == arduino : <<serial>>
+CNCShield == steppermotor : <<i2c>>
+
+@enduml
+@enduml
