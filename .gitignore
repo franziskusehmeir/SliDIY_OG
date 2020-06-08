@@ -5,6 +5,7 @@ target/
 asciidocs/revealjs/
 revealjs.zip
 
+.idea
 
 ### Angular ###
 ## Angular ##
