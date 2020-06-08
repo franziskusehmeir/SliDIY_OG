@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <style>
+    @-webkit-keyframes AnimationName {
+    0%{
+       background-position:0% 50%
+   }
+    50%{
+       background-position:100% 50%
+   }
+    100%{
+       background-position:0% 50%
+   }
+  }
+  @-moz-keyframes AnimationName {
+    0%{
+       background-position:0% 50%
+   }
+    50%{
+       background-position:100% 50%
+   }
+    100%{
+       background-position:0% 50%
+   }
+  }
+  @keyframes AnimationName {
+    0%{
+       background-position:0% 50%
+   }
+    50%{
+       background-position:100% 50%
+   }
+    100%{
+       background-position:0% 50%
+   }
+  }
+
+  body{
+    background: linear-gradient(270deg, #00998f, #40d5cb);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    background-color: #66C4B8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 4vh;
+    border: 2px solid white;
+  }
+
+  div{
+    text-align: center;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+    border-radius: 20px;
+    padding: 5vh;
+    background-color: #77E6D7;
+    margin-top: 20vh;
+  }
+
+  #comm{
+    display: none;
+  }
+  
+  .btn{
+    background-color: #66C4B8;
+    color: white;
+    padding: 8px 8px;
+    margin: 3vh;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 3vh;
+  }
+
+    </style>
+  </head>
+   <body>
+     <script type="text/javascript">
+       function setManual(){
+         document.getElementById("comm").value = document.getElementById("manCom").value;
+       }
+       function setPre1(){
+         document.getElementById("comm").value = "G91X185";
+       }
+       function setPre2(){
+         document.getElementById("comm").value = "G1 X200 F25";
+       }
+     </script>
+  <div>
+      <form action = "http://127.0.0.1:8081/process_get" method = "GET">
+         <input type = "text" id="manCom" name = "command" placeholder="Your command.." autocomplete = "off">
+         <input type = "text" id="comm" name = "comm">
+        <button type="button" class="btn" onclick="setManual()">SET</button>
+        <br>
+        <hr color="white">
+        <button type="button" class="btn" onclick="setPre1()">FAST PRESET</button>
+        <br>
+        <button type="button" class="btn" onclick="setPre2()">SLOW PRESET</button>
+        <br>
+        <br>
+         <input type = "submit" value = "GO!">
+      </form>
+  </div>
+   </body>
+</html>
