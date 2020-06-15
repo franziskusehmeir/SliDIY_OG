@@ -12,9 +12,14 @@ skinparam componentShadowing false
 skinparam componentBackgroundColor transparent
 skinparam componentBorderColor black
 
+
+@startuml
+
 node raspberryPi{
- component display
- artifact nodejsApp
+ artifact nodejsApp{
+    artifact UI
+    artifact Logic
+ }
 }
 
 node arduino{
@@ -26,7 +31,8 @@ node steppermotor{
 
 }
 
-nodejsApp == grbl : <<serial>>
+Logic == grbl : <<serial>>
 CNCShield == steppermotor : <<i2c>>
 
+@enduml
 @enduml
