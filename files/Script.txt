@@ -1,1 +1,18 @@
+1. Sequenz - Ursprüngliche Variante ohne Slider
+Man sieht wie der Protagonist eine Kamera auspackt und eine Aufnahme von einem Objekt auf einem Tisch macht.
+Eine Vogelperspektive zeigt wie ungerade die Kamerabewegung ist und die dann gezeigte Aufnahme ist ein wenig verwackelt.
 
+2. Sequenz - Unmotorisierter Slider
+Der Protagonist befestigt seine Kamera auf dem Slider und macht eine Aufnahme.
+Man sieht in der Aufnahme das sich die Bewegungsgeschwindigkeit öfters ändert.
+
+3. Sequenz - Motorisierter Slider
+Der Protagonist täuscht das Basteln am Slider vor und clont das SliDIY Repo.
+Er führt die App aus und man sieht wie sich die Kamera am Slider bewegt.
+Die Aufnahme zeigt eine ruckelfreie Aufnahme.
+
+4. Sequenz - Timelapse Feature
+Es wird zunächst eine unbewegte Timelapse und dann eine bewegte Timelapse gezeigt.
+
+5. Sequenz - Logo
+Projekt-Logo wird eingeblendet.
