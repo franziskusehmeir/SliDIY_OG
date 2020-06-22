@@ -19,3 +19,23 @@ https://franziskusehmeir.github.io/SliDIY/
 === Youtrack
 
 https://vm81.htl-leonding.ac.at/agiles/99-166/100-903
+
+=== How to run
+
+1. install https://nodejs.org/en/[Node.js]
+
+2. clone gh-repo
+
+3. navigate to code directory
+
+  cd code
+  
+4. download required node-modules
+
+  npm install
+  
+5. run app
+
+  node server.js
+  
+  
