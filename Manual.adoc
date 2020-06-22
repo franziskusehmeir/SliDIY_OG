@@ -16,9 +16,8 @@ https://www.amazon.de/gp/product/B00PNEQKC0/
 
 Arduino Uno mit CNC-Schild V3.0 (mit USB-Kabel und Treiber) +
 
-Touchscreen Display (optinal): +
+Touchscreen Display (optional): +
 https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4 +
-_Falls man mit der Desktop-Version von CNCJS arbeiten möchte, kann man diesen Schritt auslassen._ +
 
 Zahnriemen mit Zubehör: +
 https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
@@ -90,49 +89,6 @@ cncjs
 ``
 
 Nun kann man unter localhost:8000 checken ob die Installation funktioniert hat.
-
-
-Automatischen Starten von CNCJS nach dem booten:
-
-``
-(crontab -l | grep -v cncjs; echo "@reboot $(which cncjs) >>$HOME/cncjs.log 2>&1") | crontab -
-``
-
-....
-cd /home/pi
-
-cat >startCNCjsUI <<EOF
-#!/bin/bash
-
-# Prevent the screen from turning off
-xset s off
-xset -dpms
-
-# Show the user why it is taking so long
-zenity --info --no-wrap --timeout 240 --width=400 --height=400 --text="Waiting for CNCjs server to start" &
-
-# Wait until the CNCjs server becomes responsive before starting the browser
-until $(curl --output /dev/null --silent --head --fail http://localhost:8000/); do
-  sleep 1
-done
-
-# Finally, start the browser, pointing to the CNCjs server
-# --kiosk makes the browser occupy the entire screen.
-# If you want to kill the full-screen browser, use ALT-F4
-# If you omit --kiosk, the browser will start in a normal window
-chromium-browser --kiosk http://localhost:8000/
-EOF
-
-chmod a+x startCNCjsUI
-
-mkdir -p .config/lxsession/LXDE-pi
-
-cat >.config/lxsession/LXDE-pi/autostart <<EOF
-@lxpanel --profile LXDE-pi
-@pcmanfm --desktop --profile LXDE-pi
-/home/pi/startCNCjsUI
-EOF
-....
 
 Raspberry Pi neu starten +
 ``
