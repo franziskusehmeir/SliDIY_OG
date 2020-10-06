@@ -1,0 +1,48 @@
+== SliDIY - Jahresausblick 20/21
+
+=== Allgemeines
+Ein erschwingliches Slider-System, das mit einer Web-App über einen Microcontroller gesteuert werden kann. Es kann zu Hause mit Hilfe eines Handbuchs leicht rekonstruiert werden.
+
+
+=== Status Quo
+SliDIY kann einfache Bewegungen und Presets durchführen. Er benötigt aber drei Steckdosen. Es ist noch kein Case vorhanden. Verschiedene Geschwindigkeiten sind noch nicht fehlerfrei möglich. Authentifizierung läuft noch über cnc.js.
+
+=== Meilensteine
+
+- Hardware Änderung auf US & Usablility Verbesserungen | 01.12.20
+* [ ] Ultraschallsensoren einbauen
+* [ ] Kabelmanagement
+** Kabel zusammenfassen
+** Kabel sortieren
+* [ ] Akku
+** Verschiedene Möglichkeiten analysieren
+** Akku/Powerbank einbauen
+
+* [ ] Neuer Motor
+* [ ] 3D Modell Case
+** 3D Modell entwerfen
+** 3D Modell drucken
+** Case einbauen
+
+- Software Änderung: Clean up & Features | 01.02.21
+* [ ] Positionsermittlung USS
+** Werte lesen vom Ultraschallsensor
+** Position der Kamera berechnen mit zwei gemessenen Entfernungen
+
+* [ ] Endabschaltung USS
+** Motor aus sobald eine minimale Entfernung erreicht ist
+
+* [ ] Code Clean Up
+
+* [ ] Emergency Ende UI
+** Stop Button in der UI hinzufügen
+
+* [ ] Authentifizierung
+** cnc.js analysieren
+** grbl auth implementieren
+
+//* [ ] Speed:Percentage
+
+- Dokumentation & Anleitung | 01.03.21
+* [ ] Genaue Domumentation
+* [ ] Detaillierte Anleitung
