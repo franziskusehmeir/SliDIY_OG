@@ -1,44 +1,48 @@
-== Anleitung für motorisierten Slider
+= How to build a motorized slider
+Doc Writer <doc.writer@asciidoctor.org>
+v0.1.0, 2020-08-01
+:toc: left
 
-== Ziel
+== Build your own slider
 
-Das Bauen eines motorisierten Sliders.
+With the help of SliDIY it is made possible to easily build your own motorized slider.
+SliDIY is a web application which controls the movement of your slider.
 
 image:./images/SysArc.png[Aufbau,title="Aufbau"]
 
-=== Hardwareliste 
+=== Hardware list
 
-Slider: +
+camera-slider: +
 https://www.amazon.de/gp/product/B06Y46H989/
 
-Schrittmotor: +
+stepper motor: +
 https://www.amazon.de/gp/product/B00PNEQKC0/
 
-Arduino Uno mit CNC-Schild V3.0 (mit USB-Kabel und Treiber) +
+Arduino Uno with CNC-Shield V3.0 (with USB-cable and drivers) +
 
-Touchscreen Display (optional): +
+touchscreen display (optional): +
 https://www.amazon.de/Raspberry-Pi-7-Inch-Screen-Display/dp/B014WKCFR4 +
 
-Zahnriemen mit Zubehör: +
+timing belt with accessories: +
 https://www.amazon.de/gp/product/B07JGXG7S2/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
 
-=== Software Installation
+=== Software installation
 
-Auf +
-https://www.raspberrypi.org/downloads/raspbian/ +
-das Raspbian Buster Lite Image gerunterladen
+Download the Raspbian Buster Lite Image: +
+https://www.raspberrypi.org/downloads/raspbian/
 
-Das Image auf die SD-Karte schreiben mit dem Raspberry Pi Imager: +
+write the image with help of the Raspberry Pi Imager onto the sd-card: +
 https://www.raspberrypi.org/downloads/
 
-Zunächst den Anweisungen am Raspberry Pi folgen
+first follow the instruction of the Raspberry Pi
 
-Dann im raspi-config SSH freischalten
+then unlock ssh in the raspi-config
 
 ``raspi-config`` +
-In diesem Menü wechseln Sie auf den Reiter “Schnittstellen” und stellen den Punkt “SSH” auf “Aktiviert” um. Nach einem Klick auf “Ok” müssen Sie den Raspberry Pi einmalig neu starten, um den SSH-Zugriff einzuschalten.
+In this menu change to the tab "Interfacing Options" and enable the option "SSH". After this you need to reboot your
+your Raspberry Pi.
 
-CNCJS auf dem Raspberry installieren: +
+install CNCJS on the Raspberry: +
 
 ``
 sudo apt-get update
@@ -88,9 +92,28 @@ sudo npm install -g cncjs@latest --unsafe-perm
 cncjs
 ``
 
-Nun kann man unter localhost:8000 checken ob die Installation funktioniert hat.
+you can now check under localhost:8000 if the installation was successful
 
-Raspberry Pi neu starten +
+reboot Raspberry Pi  +
 ``
 sudo reboot
 ``
+
+=== 3D-Case
+
+image:./images/3d_box.jpg[3d-case,title="3d-Case"]
+
+We used https://www.tinkercad.com/[Tinkercad] for modeling our 3D-Case since it is made for people who have
+never touched a 3D-modeling software like Blender or Cinema4D. Tinkercad is a simple web-based modeling-tool.
+You have to export your 3d-model as a STL-file for the 3d-printing.
+
+other option to Tinkercad:
+
+* Blender
+* Cinema4D
+* Meshlab
+* Meshmixer
+* Microsoft 3D Builder
+
+There are no strict rules on how to design your case, so model it the way you want or download our model!
+
