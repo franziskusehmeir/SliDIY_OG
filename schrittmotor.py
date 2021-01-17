@@ -9,17 +9,13 @@ coil_A_1_pin = 23 # A schwarz-schwarz
 coil_B_2_pin = 24 # B\ blau-grau
 
 # anpassen, falls andere Sequenz
-StepCount = 8
+StepCount = 4
 Seq = list(range(0, StepCount))
 Seq[0] = [1,0,1,0]
 Seq[1] = [0,1,1,0]
 Seq[2] = [0,1,0,1]
 Seq[3] = [1,0,0,1]
-Seq[4] = [1,0,0,0]
-Seq[5] = [1,0,1,0]
-Seq[6] = [0,0,1,0]
-Seq[7] = [0,1,1,0]
- 
+
 GPIO.setup(coil_A_1_pin, GPIO.OUT)
 GPIO.setup(coil_A_2_pin, GPIO.OUT)
 GPIO.setup(coil_B_1_pin, GPIO.OUT)
