@@ -38,12 +38,13 @@ TPL = '''
 
         <form method="POST" action="test">
 
+            <label for="steps">Steps(50 = 360°):</label><br>
+            <input type="number" id="steps" name="steps" value=50><br>
+            
             <label for="delay">Delay in ms:</label><br>
             <input type="number" id="delay" name="delay" value=5><br>
-            <label for="steps">Steps(50 = 360°):</label><br>
-            <input type="number" id="steps" name="steps" value=50><br><br>
             
-
+            <br>
             <input type="submit" value="submit" />
 
         </form>
@@ -51,10 +52,6 @@ TPL = '''
     </body>
 
 </html>
-
-
-
-
 
 '''
 
@@ -82,10 +79,7 @@ def backwards(delay, steps):
 
 def home():
 
-
-
     return render_template_string(TPL)
-
  
 
 @app.route("/test", methods=["POST"])
@@ -96,14 +90,20 @@ def test():
 
     delay = request.form["delay"]
 
-    print(int(delay))
+    print(float(delay))
     
     steps = request.form["steps"]
 
     print(int(steps))
 
-    forward(int(delay) / 1000.0, int(steps))
-    backwards(int(delay) / 1000.0, int(steps))
+    if(float(steps) > 0):
+        forward(int(delay) / 1000.0, int(steps))
+        print("rotate clockwise")
+        
+    if(float(steps) < 0):
+        backwards(int(delay) / 1000.0, int(steps)*(-1))
+        print("rotate anti-clockwise")
+        
     setStep(0,0,0,0)
     
 
