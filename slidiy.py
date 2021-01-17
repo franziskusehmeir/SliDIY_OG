@@ -1,3 +1,4 @@
+from flask import Flask, render_template_string, request 
 import RPi.GPIO as GPIO
 import time
  
@@ -20,7 +21,43 @@ GPIO.setup(coil_A_1_pin, GPIO.OUT)
 GPIO.setup(coil_A_2_pin, GPIO.OUT)
 GPIO.setup(coil_B_1_pin, GPIO.OUT)
 GPIO.setup(coil_B_2_pin, GPIO.OUT)
-  
+
+app = Flask(__name__)
+ 
+#HTML 
+
+TPL = '''
+
+<html>
+
+    <head><title>SliDIY</title></head>
+
+    <body>
+
+    <h2>SliDIY</h2>
+
+        <form method="POST" action="test">
+
+            <label for="delay">Delay in ms:</label><br>
+            <input type="number" id="delay" name="delay" value=5><br>
+            <label for="steps">Steps(50 = 360°):</label><br>
+            <input type="number" id="steps" name="steps" value=50><br><br>
+            
+
+            <input type="submit" value="submit" />
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
+
+'''
+
 def setStep(w1, w2, w3, w4):
     GPIO.output(coil_A_1_pin, w1)
     GPIO.output(coil_A_2_pin, w2)
@@ -39,12 +76,43 @@ def backwards(delay, steps):
             setStep(Seq[j][0], Seq[j][1], Seq[j][2], Seq[j][3])
             time.sleep(delay)
             
-if __name__ == '__main__':
-    while True:
-	setStep(0,0,0,0)
-        delay = raw_input("Zeitverzoegerung (ms)?")
-        steps = raw_input("Wie viele Schritte vorwaerts? ")
-        forward(int(delay) / 1000.0, int(steps))
-        steps = raw_input("Wie viele Schritte rueckwaerts? ")
-        backwards(int(delay) / 1000.0, int(steps))
+ 
 
+@app.route("/")
+
+def home():
+
+
+
+    return render_template_string(TPL)
+
+ 
+
+@app.route("/test", methods=["POST"])
+
+def test():
+
+    # Get slider Values
+
+    delay = request.form["delay"]
+
+    print(int(delay))
+    
+    steps = request.form["steps"]
+
+    print(int(steps))
+
+    forward(int(delay) / 1000.0, int(steps))
+    backwards(int(delay) / 1000.0, int(steps))
+    setStep(0,0,0,0)
+    
+
+    return render_template_string(TPL)
+
+ 
+
+# Run the app on the local development server
+
+if __name__ == "__main__":
+
+    app.run()
