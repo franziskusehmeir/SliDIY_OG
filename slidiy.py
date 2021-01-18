@@ -10,6 +10,7 @@ coil_A_1_pin = 23 # A schwarz-schwarz
 coil_B_2_pin = 24 # B\ blau-grau
 
 # anpassen, falls andere Sequenz
+# eine ganze Sequenz entspricht 0.08cm
 StepCount = 4
 Seq = list(range(0, StepCount))
 Seq[0] = [1,0,1,0]
@@ -21,6 +22,12 @@ GPIO.setup(coil_A_1_pin, GPIO.OUT)
 GPIO.setup(coil_A_2_pin, GPIO.OUT)
 GPIO.setup(coil_B_1_pin, GPIO.OUT)
 GPIO.setup(coil_B_2_pin, GPIO.OUT)
+
+# Slider-Länge in cm
+sliderLength = 78 # = 975 steps
+
+# Anzahl an Steps fuer eine ganze Kamerafahrt
+completeSteps = sliderLength/0.08
 
 app = Flask(__name__)
  
@@ -36,25 +43,37 @@ TPL = '''
 
     <h2>SliDIY</h2>
 
-        <form method="POST" action="test">
-
-            <label for="steps">Steps(50 = 360°):</label><br>
-            <input type="number" id="steps" name="steps" value=50><br>
+        <form method="POST" action="run">
             
-            <label for="delay">Delay in ms:</label><br>
-            <input type="number" id="delay" name="delay" value=5><br>
+            <p>Distance: <span id="value"></span>cm</p>
+            <input type="range" id="distance" name="distance" min="-78" max="78" value="0"><br>
+            
+            <label for="time">Time in s:</label><br>
+            <input type="number" id="time" name="time" min=1 value=5><br>
             
             <br>
-            <input type="submit" value="submit" />
+            <input type="submit" value="run" />
 
         </form>
+        
+        <script>
+            var slider = document.getElementById("distance");
+            var output = document.getElementById("value");
 
+            output.innerHTML = slider.value;
+
+            slider.oninput = function() {
+                output.innerHTML = this.value;
+            }
+        </script>
+        
     </body>
 
 </html>
 
 '''
 
+# Zustand der Pins setzen
 def setStep(w1, w2, w3, w4):
     GPIO.output(coil_A_1_pin, w1)
     GPIO.output(coil_A_2_pin, w2)
@@ -79,30 +98,49 @@ def backwards(delay, steps):
 
 def home():
 
+    setStep(0,0,0,0)
+
     return render_template_string(TPL)
  
 
-@app.route("/test", methods=["POST"])
+@app.route("/run", methods=["POST"])
 
-def test():
+def run():
+
+    setStep(0,0,0,0)
 
     # Get slider Values
-
-    delay = request.form["delay"]
-
-    print(float(delay))
+    distance = request.form["distance"]
     
-    steps = request.form["steps"]
+    time = int(request.form["time"])
+    
+    print(int(distance))
+
+    steps = int(distance)/0.08
+    
+    delay = 0
+    
+    # /4 damit die richtige Zeit rauskommt
+    if(steps != 0):
+        delay = time/steps/4
+    
+    if(delay < 0):
+        delay = -delay
+    
+    if(delay<0.0015):
+        delay = 0.0015
+
+    print(delay)
 
     print(int(steps))
 
     if(float(steps) > 0):
-        forward(int(delay) / 1000.0, int(steps))
-        print("rotate clockwise")
+        forward(delay, int(steps))
+        print("rotate anti-clockwise")
         
     if(float(steps) < 0):
-        backwards(int(delay) / 1000.0, int(steps)*(-1))
-        print("rotate anti-clockwise")
+        backwards(delay, int(steps)*(-1))
+        print("rotate clockwise")
         
     setStep(0,0,0,0)
     
