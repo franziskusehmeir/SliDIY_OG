@@ -12,26 +12,22 @@ skinparam componentShadowing false
 skinparam componentBackgroundColor transparent
 skinparam componentBorderColor black
 
-
-@startuml
-
-node raspberryPi{
-component display
- artifact cncjsWebInterface
- artifact cncjsServer
+node raspberryPi {
+ component display
+ artifact PythonScript
+ artifact FlaskApp
 }
 
-node arduino{
- component CNCShield
+node L293D {
+
 }
 
 node steppermotor{
 
 }
 
-cncjsWebInterface == cncjsServer
-raspberryPi == arduino : <<serial>>
-CNCShield == steppermotor : <<i2c>>
+PythonScript == FlaskApp
+PythonScript == L293D : <<GPIO>>
+L293D == steppermotor
 
-@enduml
 @enduml
