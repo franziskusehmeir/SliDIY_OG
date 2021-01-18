@@ -24,7 +24,7 @@ GPIO.setup(coil_B_1_pin, GPIO.OUT)
 GPIO.setup(coil_B_2_pin, GPIO.OUT)
 
 # Slider-Länge in cm
-sliderLength = 78 # = 975 steps
+sliderLength = 55
 
 # Anzahl an Steps fuer eine ganze Kamerafahrt
 completeSteps = sliderLength/0.08
@@ -46,7 +46,7 @@ TPL = '''
         <form method="POST" action="run">
             
             <p>Distance: <span id="value"></span>cm</p>
-            <input type="range" id="distance" name="distance" min="-78" max="78" value="0"><br>
+            <input type="range" id="distance" name="distance" min="-55" max="55" value="0"><br>
             
             <label for="time">Time in s:</label><br>
             <input type="number" id="time" name="time" min=1 value=5><br>
@@ -80,17 +80,30 @@ def setStep(w1, w2, w3, w4):
     GPIO.output(coil_B_1_pin, w3)
     GPIO.output(coil_B_2_pin, w4)
  
+def acceleration(delay, steps, currentStep):
+    acc_time=0.01-delay
+    acc_steps=steps/9
+    acc_delay=acc_time/acc_steps
+    if(delay<0.01 and currentStep < acc_steps):
+        time.sleep(delay+(acc_delay*(acc_steps-currentStep)))
+    elif(delay<0.01 and currentStep > steps-acc_steps):
+        time.sleep(delay+(acc_delay*(acc_steps-(steps-currentStep))))
+    else:
+        time.sleep(delay)
+        
+    
+ 
 def forward(delay, steps):
     for i in range(steps):
         for j in range(StepCount):
             setStep(Seq[j][0], Seq[j][1], Seq[j][2], Seq[j][3])
-            time.sleep(delay)
+            acceleration(delay, steps, i)
  
 def backwards(delay, steps):
     for i in range(steps):
         for j in reversed(range(StepCount)):
             setStep(Seq[j][0], Seq[j][1], Seq[j][2], Seq[j][3])
-            time.sleep(delay)
+            acceleration(delay, steps, i)
             
  
 
@@ -116,6 +129,9 @@ def run():
     
     print(int(distance))
 
+    if(int(distance) > sliderLength):
+        distance=0
+        
     steps = int(distance)/0.08
     
     delay = 0
