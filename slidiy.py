@@ -150,8 +150,8 @@ def run():
     if(delay < 0):
         delay = -delay
     
-    if(delay<0.0015):
-        delay = 0.0015
+    if(delay<0.003):
+        delay = 0.003
 
     print(delay)
 
