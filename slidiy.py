@@ -37,9 +37,15 @@ TPL = '''
 
 <html>
 
-    <head><title>SliDIY</title></head>
+    <head>
+        <title>SliDIY</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        
+    </head>
 
     <body>
+
+    <div>
 
     <h2>SliDIY</h2>
 
@@ -55,7 +61,8 @@ TPL = '''
             <input type="submit" value="run" />
 
         </form>
-        
+    </div>
+    
         <script>
             var slider = document.getElementById("distance");
             var output = document.getElementById("value");
