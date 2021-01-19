@@ -18,7 +18,7 @@ https://franziskusehmeir.github.io/SliDIY/
 
 === Youtrack
 
-https://vm81.htl-leonding.ac.at/agiles/99-166/100-903
+https://vm81.htl-leonding.ac.at/agiles/99-166/current
 
 === How to run
 
