@@ -23,7 +23,7 @@ GPIO.setup(coil_A_2_pin, GPIO.OUT)
 GPIO.setup(coil_B_1_pin, GPIO.OUT)
 GPIO.setup(coil_B_2_pin, GPIO.OUT)
 
-# Slider-Länge in cm
+# Slider-Laenge in cm
 sliderLength = 55
 
 # Anzahl an Steps fuer eine ganze Kamerafahrt
