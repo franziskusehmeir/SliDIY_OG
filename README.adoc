@@ -18,24 +18,23 @@ https://franziskusehmeir.github.io/SliDIY/
 
 === Youtrack
 
-https://vm81.htl-leonding.ac.at/agiles/99-166/100-903
+https://vm81.htl-leonding.ac.at/agiles/99-166/current
 
 === How to run
 
-1. install https://nodejs.org/en/[Node.js]
+1. clone gh-repo
 
-2. clone gh-repo
+2. install https://pip.pypa.io/en/stable/quickstart/[pip]
 
-3. navigate to code directory
-
-  cd code
+  python get-pip.py
   
-4. download required node-modules
+3. install https://flask.palletsprojects.com/en/1.1.x/[Flask] and https://pypi.org/project/RPi.GPIO/[RPi.GPIO] with pip
 
-  npm install
+  python -m pip install -U Flask
+  python -m pip install RPI.GPIO
   
-5. run app
+4. run app
 
-  node server.js
+  python slidiy.py
   
   
