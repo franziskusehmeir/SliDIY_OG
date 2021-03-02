@@ -2,6 +2,9 @@
 
 An affordable slider system that can be controlled with a web app via a microcontroller. It can be easily reconstructed at home with the help of a manual.
 
+==== News
+This repo has moved to https://github.com/franziskusehmeir/SliDIY
+
 ==== Authors
 
 * *Tea Leon* - https://github.com/tealeon[TeaLeon]
